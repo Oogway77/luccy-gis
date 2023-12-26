@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Use correct character set. -->
+        <meta charset="utf-8" />
+        <!-- Tell IE to use the latest, best version. -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <!-- Make the application on mobile take up the full browser screen and disable user scaling. -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+        <title></title>
+        <script src="https://cesium.com/downloads/cesiumjs/releases/1.106/Build/CesiumUnminified/Cesium.js"></script>
+
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/cesium/1.92.0/Cesium.js"
+        integrity="sha512-+HOk10QAUdruLu3zoxQjrvpfuAW3YJ4dWptlsVkc2LTswI9TXZEJExCWJ6XiGkb2OEXPF0qPGE3o7DuocBCXBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+            integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+
+        <link href="https://cesium.com/downloads/cesiumjs/releases/1.92/Build/Cesium/Widgets/widgets.css" rel="stylesheet" />
+
+        <link rel="stylesheet" href="./bucket.css" />
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+
+    <body>
+        <div id="cesiumContainer" class="fullSize"></div>
+
+        <button id="add-building" style="position: absolute; left: 50px; top: 20px">Add Building</button>
+
+        <table id="building-props" style="position: absolute; left: 50px; top: 50px; display: none">
+            <tbody>
+                <tr>
+                    <td>Total height</td>
+                    <td>
+                        <input id="total-height" type="text" size="5" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Width</td>
+                    <td>
+                        <input id="width" type="text" size="5" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Length</td>
+                    <td>
+                        <input id="length" type="text" size="5" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Angle</td>
+                    <td>
+                        <input id="angle" type="text" size="5" />
+                    </td>
+                </tr>
+                <!-- <tr>
+                    <td>Place on Terrain</td>
+                    <td>
+                        <input id="place-on-terrain" type="checkbox" />
+                    </td>
+                </tr> -->
+
+                <tr>
+                    <td>Height above terrain</td>
+                    <td>
+                        <input id="height-above-terrain" type="text" size="5" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Show Floor</td>
+                    <td>
+                        <input type="checkbox" id="show-floors" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Normal floors height</td>
+                    <td>
+                        <input id="normal-floors-height" type="text" size="5" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Ground floors height</td>
+                    <td>
+                        <input id="ground-floors-height" type="text" size="5" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Ground floors</td>
+                    <td>
+                        <input id="ground-floors" type="text" size="5" />
+                    </td>
+                </tr>
+
+                <!-- <tr>
+                    <td>Basement floors height</td>
+                    <td>
+                        <input type="text" size="1" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Basement floors</td>
+                    <td>
+                        <input type="text" size="1" />
+                    </td>
+                </tr> -->
+
+                <tr>
+                    <td>Opacity</td>
+                    <td>
+                        <input id="opacity" type="text" size="5" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Color</td>
+                    <td>
+                        <button id="set-color">Random Color</button>
+                    </td>
+                </tr>
+                <!-- <tr>
+                    <td>Roof color</td>
+                    <td>
+                        <input type="text" size="1" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Roof type</td>
+                    <td>
+                        <input type="text" size="1" />
+                    </td>
+                </tr> -->
+            </tbody>
+        </table>
+
+        <div id="toolbar"></div>
+    </body>
+
+    <script src="./app.js"></script>
+</html>

@@ -1,0 +1,28 @@
+body .map-tooltip {
+    position: absolute;
+    pointer-events: none;
+    background-color: #fff;
+    color: #000;
+    font-size: 1rem;
+}
+body .map-tooltip .map-tooltip-inner {
+    box-shadow: 0 0 10px #0000001a;
+    padding: 10px 15px;
+}
+body .map-tooltip .map-tooltip-inner .map-tooltip-heading {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+body .map-tooltip .map-tooltip-inner .map-tooltip-grid {
+    display: grid;
+    column-gap: 10px;
+}
+body .map-tooltip .map-tooltip-inner .map-tooltip-grid .title {
+    font-weight: 700;
+    grid-column: 1/1;
+    justify-self: start;
+}
+body .map-tooltip .map-tooltip-inner .map-tooltip-grid .value {
+    grid-column: 2/2;
+    justify-self: end;
+}

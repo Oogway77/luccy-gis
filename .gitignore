@@ -1,0 +1,8 @@
+/node_modules
+/yarn.lock
+/app.js
+/app.js.map
+/build/app.js
+/build/app.js.map
+/build/minimized_app.js
+/build/minimized_app.js.map
